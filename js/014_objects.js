@@ -17,6 +17,7 @@ console.log(person.id);
 console.log(person.fullName());
 
 console.log("## this ##");
+console.log();
 // In a method, this refers to the owner object.
 // fullName : function() {
 //   return this.firstName + " " + this.lastName;
@@ -41,3 +42,24 @@ console.log("## this ##");
 // <button onclick="this.style.display='none'">
 //   Click to Remove Me!
 // </button>
+
+
+console.log("## Property Getters and Setters ##");
+
+var person2 = {
+  firstName: "John",
+  lastName : "Doe",
+  language : "NO",
+  // get lang() {
+  //   return this.language;
+  // },
+  set lang(value) {
+    // Set an object property using a setter:
+    this.language = value.toUpperCase();
+  }
+};
+
+// Set an object property using a setter:
+person2.lang = "en";
+console.log(person2.lang);
+console.log(person2.lastName);

@@ -1,0 +1,61 @@
+ECMAScript 1 (1997)    First Edition.
+
+ECMAScript 2 (1998)    Editorial changes only.
+
+ECMAScript 3 (1999)    Added Regular Expressions.
+                       Added try/catch.
+
+ECMAScript 5 (2009)    Added "strict mode".
+                       Added JSON support.
+                       Added String.trim().
+                       Added Array.isArray().
+                       Added Array Iteration Methods.
+
+ECMAScript 2015 (ES6)  Added let and const.
+                       Added default parameter values.
+                       Added Array.find().
+                       Added Array.findIndex().
+
+ECMAScript 2016        Added exponential operator (**).
+                       Added Array.prototype.includes.
+
+ECMAScript 2017        Added string padding.
+                       Added new Object properties.
+                       Added Async functions.
+                       Added Shared Memory.
+
+ECMAScript 2018	       Added rest / spread properties.
+                       Added Asynchronous iteration.
+                       Added Promise.finally().
+                       Additions to RegExp.
+
+ECMAScript 5 (ES5) is fully supported in all modern browsers.
+
+== ECMAScript 5 Features ==
+"use strict"
+String.trim()
+Array.isArray()
+Array.forEach()
+Array.map()
+Array.filter()
+Array.reduce()
+Array.reduceRight()
+Array.every()
+Array.some()
+Array.indexOf()
+Array.lastIndexOf()
+JSON.parse()
+JSON.stringify()
+Date.now()
+Property Getters and Setters
+New Object Property Methods
+
+== ECMAScript 6 Features ==
+JavaScript let
+JavaScript const
+JavaScript Arrow Functions
+JavaScript Classes
+Default parameter values
+Array.find()
+Array.findIndex()
+Exponentiation (**)

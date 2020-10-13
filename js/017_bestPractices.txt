@@ -1,0 +1,56 @@
+== Variable Names ==
+use camelCase for identifier names
+All names start with a letter or underscore
+
+== Avoid Global Variables ==
+Minimize the use of global variables.
+This includes all data types, objects, and functions.
+Global variables and functions can be overwritten by other scripts.
+
+== Declarations on Top ==
+var firstName, lastName, price, discount, fullPrice;
+
+// Use later
+firstName = "John";
+lastName = "Doe";
+price = 19.90;
+discount = 0.10;
+
+== Initialize Variables ==
+It is a good coding practice to initialize variables when you declare them.
+
+var firstName = "",
+lastName = "",
+price = 0,
+discount = 0,
+fullPrice = 0,
+myArray = [],
+myObject = {};
+
+== Don't Use new Object() ==
+var x1 = {};           // new object
+var x2 = "";           // new primitive string
+var x3 = 0;            // new primitive number
+var x4 = false;        // new primitive boolean
+var x5 = [];           // new array object
+var x6 = /()/;         // new regexp object
+var x7 = function(){}; // new function object
+
+== Beware of Automatic Type Conversions ==
+var x = "Hello";     // typeof x is a string
+x = 5;               // changes typeof x to a number
+
+## Use === Comparison ##
+The == comparison operator always converts (to matching types) before comparison.
+The === operator forces comparison of values and type:
+0 == "";        // true
+1 == "1";       // true
+1 == true;      // true
+
+0 === "";       // false
+1 === "1";      // false
+1 === true;     // false
+
+== Delay JavaScript Loading ==
+Putting your scripts at the bottom of the page body lets the browser load the page first.
+While a script is downloading, the browser will not start any other downloads. In addition all parsing and rendering activity might be blocked.
