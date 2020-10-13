@@ -63,3 +63,21 @@ var person2 = {
 person2.lang = "en";
 console.log(person2.lang);
 console.log(person2.lastName);
+
+// The JavaScript prototype property also allows you to add new methods to objects constructors:
+console.log("## prototype ##");
+
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+// }
+
+// Person.prototype.nationality = "English";
+
+// Person.prototype.name = function() {
+//   return this.firstName + " " + this.lastName;
+// };
+
+// var myFather = new Person("John", "Doe", 50, "blue");
