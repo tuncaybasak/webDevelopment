@@ -10,7 +10,7 @@ const items = [
   {name: 'İplik', price:125},
 ]
 
-const showCase = 19;
+const showCase = 1;
 if(showCase === 1){
   // 1. (filter)
   const filteredItems = items.filter((item) => {

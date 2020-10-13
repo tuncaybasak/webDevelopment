@@ -1,4 +1,9 @@
 
+// can convert numbers to strings.
+console.log("## String ##");
+console.log(String(123));
+console.log();
+
 // (length) returns the length of a string
 var txt = "Please locate where 'locate' occurs!";
 console.log("## length ##");

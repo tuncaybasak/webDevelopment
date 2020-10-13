@@ -68,6 +68,7 @@ console.log(typeof("Tuncay"));
 console.log(typeof(3));
 console.log(typeof(false));
 console.log(typeof(xx));
+console.log(typeof Nan);
 console.log();
 
 // ## Complex Data ##
@@ -88,3 +89,4 @@ console.log(typeof null);
 
 // Returns "function"
 console.log(typeof function myFunc(){});   
+

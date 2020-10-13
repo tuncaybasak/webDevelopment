@@ -61,11 +61,11 @@ console.log();
 
 //parses a string and returns a number. Spaces are allowed. Only the first number is returned:
 console.log("## parseFloat ##");
-console.log(parseInt("10"));         // returns 10
-console.log(parseInt("10.33"));      // returns 10.33
-console.log(parseInt("10 20 30"));   // returns 10
-console.log(parseInt("10 years"));   // returns 10
-console.log(parseInt("years 10"));   // returns NaN 
+console.log(parseFloat("10"));         // returns 10
+console.log(parseFloat("10.33"));      // returns 10.33
+console.log(parseFloat("10 20 30"));   // returns 10
+console.log(parseFloat("10 years"));   // returns 10
+console.log(parseFloat("years 10"));   // returns NaN 
 console.log();
 
 // MAX_VALUE returns the largest possible number
