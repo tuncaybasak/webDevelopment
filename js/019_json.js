@@ -1,4 +1,13 @@
 console.log("## json ##");
+// JSON is a format for storing and transporting data.
+// JSON data is written as name/value pairs, just like JavaScript object properties.
+// JSON syntax is derived from JavaScript object notation syntax
+
+// "employees":[
+//   {"firstName":"John", "lastName":"Doe"},
+//   {"firstName":"Anna", "lastName":"Smith"},
+//   {"firstName":"Peter", "lastName":"Jones"}
+// ]
 console.log();
 
 // common use of JSON is to receive data from a web server.

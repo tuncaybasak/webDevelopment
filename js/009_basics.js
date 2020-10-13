@@ -29,6 +29,14 @@ var x = 10 / "H"; //Nan
 console.log(Boolean(x));
 console.log();
 
+console.log("## Default Parameter Values ##");
+function myFunction(x, y = 10) {
+  // y is 10 if not passed or undefined
+  return x + y;
+}
+console.log(myFunction(5)); // will return 15
+console.log();
+
 console.log("## Conditional (Ternary) Operator ##");
 var voteable = (7 < 18) ? "Too young":"Old enough";
 console.log(voteable);

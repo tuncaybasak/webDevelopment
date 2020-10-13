@@ -73,3 +73,16 @@ console.log(Number.MAX_VALUE);
 
 // MIN_VALUE returns the lowest possible number
 console.log(Number.MIN_VALUE);
+console.log();
+
+// The exponentiation operator (**) raises the first operand to the power of the second operand.
+console.log("## Exponentiation Operator ##");
+var x = 5;
+var z = x ** 2;
+console.log(z);
+console.log();
+
+// Number.isInteger() method returns true if the argument is an integer.
+console.log("## isInteger ##");
+console.log(Number.isInteger(10)); 
+console.log(Number.isInteger(10.5));
