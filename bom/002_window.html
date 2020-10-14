@@ -54,6 +54,12 @@
       <span id="n7"></span><br />
       <span id="n8"></span><br />
       <span id="n9"></span><br />
+
+      <h3>Alert</h3>
+      <button onclick="alert('hello world!')">Alert</button> &nbsp;&nbsp;&nbsp;
+      <button onclick="confirmFunc()">Confirm</button> &nbsp;&nbsp;&nbsp;     
+      <button onclick="promptFunc()">Prompt</button> <p></p>
+      <span id="a1"></span>
   </body>  
   <script>
     document.getElementById("w1").innerHTML = "innerHeight :" +  window.innerHeight; 
@@ -98,5 +104,27 @@
     document.getElementById("n7").innerHTML = "<b>navigator userAgent : </b>" + navigator.userAgent; 
     document.getElementById("n8").innerHTML = "<b>navigator appVersion : </b>" + navigator.appVersion; 
     document.getElementById("n9").innerHTML = "<b>navigator product : </b>" + navigator.product; 
+
+    function confirmFunc() {
+      var sonuc = "";
+      if (confirm("Do you want playe a game?")) {
+        sonuc = "YES";
+      } else {
+        sonuc = "NO";
+      }
+      document.getElementById("a1").innerHTML = sonuc
+    }
+
+    function promptFunc() {
+      var person = prompt("Please enter your name", "Harry Potter");
+
+      if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+      } else {
+        txt = "Hello " + person + "! How are you today?";
+      }
+       document.getElementById("a1").innerHTML = txt;
+    }
+
   </script>
 </html>

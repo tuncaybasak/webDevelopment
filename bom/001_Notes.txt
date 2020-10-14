@@ -55,3 +55,25 @@ navigator.javaEnabled() : method returns true if Java is enabled
 navigator.userAgent     : returns the user-agent header sent by the browser to the server
 navigator.appVersion    : returns version information about the browser
 navigator.product       : returns the product name of the browser engine       
+
+## Window Alert ##
+JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+window.alert()      : An alert box is often used if you want to make sure information comes through to the user.
+window.confirm()    : A confirm box is often used if you want the user to verify or accept something.
+window.prompt()     : A prompt box is often used if you want the user to input a value before entering a page.
+
+## Timing Events ##
+// The window object allows execution of code at specified time intervals.
+
+= setTimeout(function, milliseconds) =
+Executes a function, after waiting a specified number of milliseconds.
+
+= window.clearTimeout(timeoutVariable) =
+stops the execution of the function specified in setTimeout().
+
+= setInterval(function, milliseconds) =
+Same as setTimeout(), but repeats the execution of the function continuously.
+
+= window.clearInterval(timerVariable) =
+stops the executions of the function specified in the setInterval() method.

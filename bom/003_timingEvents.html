@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timing Events</title>      
+  </head>
+  <body>            
+    <h3>setTimeout & clearTimeout</h3>
+    <p>Executes a function, after waiting a specified number of milliseconds.</p>
+    <button onclick="myVar = setTimeout(welcomeFunc, 3000)">Try it</button> &nbsp;
+    <button onclick="clearTimeout(myVar)">Stop it</button>
+    <p></p>
+
+    <h3>setInterval & clearInterval</h3>
+    <p>Same as setTimeout(), but repeats the execution of the function continuously.</p>
+    <button onclick="myVarTimer = setInterval(myTimerFunc, 1000)">Try it</button> &nbsp;
+    <button onclick="clearInterval(myVarTimer)">Stop it</button>
+    <p id="content"></p>
+  </body>
+  <script>
+    function welcomeFunc(){
+      alert('hello');
+    }
+
+    function myTimerFunc() {
+      var d = new Date();
+      document.getElementById("content").innerHTML = d.toLocaleTimeString();
+    }
+  </script>
+</html>
