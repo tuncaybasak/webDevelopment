@@ -1,0 +1,38 @@
+## FIND ##
+
+= Finding HTML Element by Id =
+var myElement = document.getElementById("intro");
+
+= Finding HTML Elements by Tag Name = 
+var x = document.getElementsByTagName("p");
+
+= Finding HTML Elements by Class Name =
+var x = document.getElementsByClassName("intro");
+
+= Finding HTML Elements by CSS Selectors =
+// This example returns a list of all <p> elements with class="intro".
+var x = document.querySelectorAll("p.intro");
+
+## CHANGE ##
+
+= Changing HTML Content =
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+= Changing the Value of an Attribute =
+<img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+== Changing HTML Style ==
+
+<p id="p2">Hello World!</p>
+<script>document.getElementById("p2").style.color = "blue";</script>
+
+<h1 id="id1">My Heading 1</h1>
+<button type="button"onclick="document.getElementById('id1').style.color = 'red'">Click Me!</button>

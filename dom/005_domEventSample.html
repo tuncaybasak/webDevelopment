@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Samples</title>      
+  </head>
+  <style>
+    #mouseActionDiv {
+      background-color:#D94A38;
+      width:120px;
+      height:20px;
+      padding:40px;
+      color: white;
+      font-weight: bolder;
+    }
+  </style>
+  <body>
+    <h1 onclick="this.innerHTML= 'Ooops!'">Click on this text!</h1>          
+    <p></p>  
+    <h1 onclick="changeText(this)">Click on this text2!</h1>
+    <p></p>  
+    <button onclick="displayDate()">Try it</button>
+    <p></p>  
+    <button id="myBtn">Try it 2</button>
+    <p id="date"></p>
+    <div id="mouseActionDiv" onmouseover="mouseActionDiv_Over(this)" onmouseout="mouseActionDiv_Out(this)">
+      Mouse Over Me
+    </div>
+    <p></p>  
+    <button id="myBtn2">Try it 3</button>
+    <p id="divBtn2"></p>
+  </body>
+  <script>
+    function changeText(e){
+      e.innerHTML= 'Ooops!';
+      e.style.color = 'red';
+    }
+
+    function displayDate(){
+      var elm = window.document.getElementById("date");
+      elm.innerHTML = Date();
+      elm.style.fontWeight = 'bold';
+    }
+
+    document.getElementById("myBtn").onclick = displayDate;
+
+    function mouseActionDiv_Over(e){
+      e.innerHTML = "Thank You";
+    }
+
+     function mouseActionDiv_Out(e){
+      e.innerHTML = "Mouse Over Me";
+    }
+
+    document.getElementById("myBtn2").addEventListener("click", function(){
+      document.getElementById("divBtn2").innerHTML = "Function 1 run";
+    });
+
+    document.getElementById("myBtn2").addEventListener("click", function(){
+      document.getElementById("divBtn2").innerHTML += "Function 2 run";
+    });
+
+  </script>
+  </html>

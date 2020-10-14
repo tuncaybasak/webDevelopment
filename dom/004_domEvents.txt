@@ -1,0 +1,115 @@
+## JavaScript HTML DOM Events ##
+HTML DOM allows JavaScript to react to HTML events:
+
+Examples of HTML events:
+
+When a user clicks the mouse
+When a web page has loaded
+When an image has been loaded
+When the mouse moves over an element
+When an input field is changed
+When an HTML form is submitted
+When a user strokes a key
+
+== onclick Event ==
+
+<body>
+<h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+</body>
+
+<body>
+<h1 onclick="changeText(this)">Click on this text!</h1>
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+</script>
+</body>
+
+<body>
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+<p id="demo"></p>
+</body>
+
+== onchange Event ==
+
+<body>
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</body>
+
+== onmouseover, onmouseout Event ==
+
+<body>
+<div onmouseover="mOver(this)" 
+     onmouseout="mOut(this)" 
+     style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me
+</div>
+
+<script>
+function mOver(obj) { obj.innerHTML = "Thank You"}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+</body>
+
+
+## The addEventListener(), removeEventListener() method ##
+method attaches an event handler to the specified element.
+method attaches an event handler to an element without overwriting existing event handlers.
+You can add many event handlers to one element.
+
+element.addEventListener("click", function(){ alert("Hello World!"); });
+
+= Add Many Event Handlers to the Same Element =
+
+element.addEventListener("click", myFunction);
+element.addEventListener("click", mySecondFunction);
+
+element.addEventListener("mouseover", myFunction);
+element.addEventListener("click", mySecondFunction);
+element.addEventListener("mouseout", myThirdFunction);
+
+element.addEventListener("click", function(){ myFunction(p1, p2); });
+
+== Passing Parameters == 
+<button id="myBtn">Try it</button>
+<p id="demo"></p>
+<script>
+var p1 = 5;
+var p2 = 7;
+
+document.getElementById("myBtn").addEventListener("click", function() {
+  myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+  var result = a * b;
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+== removeEventListener() == 
+// method removes event handlers that have been attached with the addEventListener() method
+element.removeEventListener("mousemove", myFunction);
+
+== Add an Event Handler to the window Object == 
+
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = sometext;
+});
