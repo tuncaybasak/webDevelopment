@@ -1,0 +1,21 @@
+## JavaScript Cookies ##
+Cookies let you store user information in web pages.
+Cookies are data, stored in small text files, on your computer.
+When a browser requests a web page from a server, cookies belonging to the page are added to the request. This way the server gets the necessary data to "remember" information about users.
+
+= Create a Cookie with JavaScript =
+document.cookie = "username=John Doe";
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+
+= Read a Cookie with JavaScript = 
+// will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;
+var x = document.cookie;
+
+= Change a Cookie with JavaScript =
+With JavaScript, you can change a cookie the same way as you create it:
+document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+= Delete a Cookie with JavaScript = 
+You don't have to specify a cookie value when you delete a cookie.
+Just set the expires parameter to a passed date:
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
