@@ -1,0 +1,57 @@
+== The Browser Object Model (BOM) ==
+Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
+
+## The Window Object ##
+It represents the browser's window
+All global JavaScript objects, functions, and variables automatically become members of the window object
+window.document.getElementById("header") = document.getElementById("header")
+
+== Window Size ==
+Two properties can be used to determine the size of the browser window
+window.innerHeight - the inner height of the browser window (in pixels)
+window.innerWidth - the inner width of the browser window (in pixels)
+
+== Other Window Methods ==
+window.open() - open a new window
+window.close() - close the current window
+window.moveTo() - move the current window
+window.resizeTo() - resize the current window
+
+## Window Screen ##
+The window.screen object contains information about the user's screen.
+
+screen.width         : returns the width of the visitor's screen in pixels  
+screen.height        : returns the height of the visitor's screen in pixels.
+screen.availWidth    : returns the width of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.
+screen.availHeight   : returns the height of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.
+screen.colorDepth    : returns the number of bits used to display one color.
+screen.pixelDepth    : returns the pixel depth of the screen.
+
+## Window Location ##
+The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+
+window.location.href       : returns the href (URL) of the current page
+window.location.hostname   : returns the domain name of the web host
+window.location.pathname   : returns the path and filename of the current page
+window.location.protocol   : returns the web protocol used (http: or https:)
+window.location.port       : y returns the number of the internet host port (of the current page)
+window.location.assign()   : loads a new document (like click a href)
+
+## Window History ##
+The window.history object contains the browsers history.
+
+history.back()     : same as clicking back in the browser
+history.forward()  : same as clicking forward in the browser
+
+## Window Navigator ##
+The window.navigator object contains information about the visitor's browser.
+
+navigator.appName       : returns the application name of the browser
+navigator.appCodeName   : returns the application code name of the browser
+navigator.platform      : returns the browser platform (operating system)
+navigator.language      : returns the browser's language
+navigator.onLine        : returns true if the browser is online
+navigator.javaEnabled() : method returns true if Java is enabled
+navigator.userAgent     : returns the user-agent header sent by the browser to the server
+navigator.appVersion    : returns version information about the browser
+navigator.product       : returns the product name of the browser engine       

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bom Samples</title>      
+  </head>
+  <body> 
+      <h3>The Window Object</h3>
+      <span id="w1"></span><br /> 
+      <span id="w2"></span><br />
+      <span>Window Open :</span>
+      <button onclick="openWin()">Window Open</button>
+      <br />
+      <span>Window Move :</span>
+      <button onclick="moveWin()">Window Move</button>
+      <br />
+      <span>Window Resize :</span>
+      <button onclick="resizeWin()">Window Resize</button>
+      <br />
+      <span>Window Close :</span>
+      <button onclick="myWindow.close()">Window Close</button>
+      <br />
+
+      <h3>The Screen Object</h3>
+      <span id="s1"></span><br /> 
+      <span id="s2"></span><br />
+      <span id="s3"></span><br /> 
+      <span id="s4"></span><br />
+      <span id="s5"></span><br /> 
+      <span id="s6"></span><br />
+
+      <h3>The Location Object</h3>
+      <span id="l1"></span><br /> 
+      <span id="l2"></span><br />
+      <span id="l3"></span><br /> 
+      <span id="l4"></span><br />
+      <span id="l5"></span><br /> 
+      <span><b>window.location.assign()</b> : loads a new document</span>
+      <button onclick="window.location.assign("https://www.w3schools.com")">Load</button>
+      <br />  
+
+      <h3>The History Object</h3>
+      <button onclick="history.back()">go back</button>
+      <br />  
+      <button onclick="history.forward()">go forward</button>
+      <br />
+
+      <h3>The Navigator Object</h3>
+      <span id="n1"></span><br /> 
+      <span id="n2"></span><br />
+      <span id="n3"></span><br /> 
+      <span id="n4"></span><br />
+      <span id="n5"></span><br /> 
+      <span id="n6"></span><br />
+      <span id="n7"></span><br />
+      <span id="n8"></span><br />
+      <span id="n9"></span><br />
+  </body>  
+  <script>
+    document.getElementById("w1").innerHTML = "innerHeight :" +  window.innerHeight; 
+    document.getElementById("w2").innerHTML = "innerWidth :" +  window.innerWidth;  
+    
+    var myWindow; 
+
+    function moveWin() { 
+      myWindow.moveTo(500, 100); 
+      myWindow.focus(); 
+    } 
+  
+    function openWin() { 
+      myWindow = window.open("", "myWindow", "width=200", "height=100");         
+      myWindow.document.write("<p>This is 'myWindow'</p>"); 
+    } 
+
+    function resizeWin() {
+      myWindow.resizeTo(250, 250);
+      myWindow.focus();
+    }
+
+    document.getElementById("s1").innerHTML = "screen width :" + screen.width; 
+    document.getElementById("s2").innerHTML = "screen height :" + screen.height; 
+    document.getElementById("s3").innerHTML = "screen available width :" + screen.availWidth; 
+    document.getElementById("s4").innerHTML = "screen available height :" + screen.availHeight; 
+    document.getElementById("s5").innerHTML = "screen color depth :" + screen.colorDepth; 
+    document.getElementById("s6").innerHTML = "screen pixel depth :" + screen.pixelDepth; 
+
+    document.getElementById("l1").innerHTML = "<b>window location href  : </b>" + window.location.href ; 
+    document.getElementById("l2").innerHTML = "<b>window location hostname : </b>" + window.location.hostname; 
+    document.getElementById("l3").innerHTML = "<b>window location pathname  :</b>" + window.location.pathname; 
+    document.getElementById("l4").innerHTML = "<b>window location protocol : </b>" + window.location.protocol; 
+    document.getElementById("l5").innerHTML = "<b>window location port: </b>" + window.location.port; 
+
+    document.getElementById("n1").innerHTML = "<b>navigator appName : </b>" + navigator.appName; 
+    document.getElementById("n2").innerHTML = "<b>navigator appCodeName : </b>" + navigator.appCodeName; 
+    document.getElementById("n3").innerHTML = "<b>navigator platform : </b>" + navigator.platform; 
+    document.getElementById("n4").innerHTML = "<b>navigator language : </b>" + navigator.language; 
+    document.getElementById("n5").innerHTML = "<b>navigator onLine : </b>" + navigator.onLine; 
+    document.getElementById("n6").innerHTML = "<b>navigator javaEnabled : </b>" + navigator.javaEnabled(); 
+    document.getElementById("n7").innerHTML = "<b>navigator userAgent : </b>" + navigator.userAgent; 
+    document.getElementById("n8").innerHTML = "<b>navigator appVersion : </b>" + navigator.appVersion; 
+    document.getElementById("n9").innerHTML = "<b>navigator product : </b>" + navigator.product; 
+  </script>
+</html>
