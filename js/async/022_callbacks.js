@@ -32,3 +32,29 @@ function myCalculator(num1, num2, callback) {
 }
 
 myCalculator(5, 5, myDisplayer);
+
+// Sample
+const userLeft = false;
+const userWatchingCatMem = false;
+
+function watchTutorialCallBack(callback, errorCallBack) {
+  if(userLeft) {
+    errorCallBack({
+      name: "User Left",
+      message: ":("
+    });
+  } else if(userWatchingCatMem){
+    errorCallBack({
+      name: "User watching cat mem",
+      message: "web < catch"
+    });
+  }else {
+    callback('thumbs up and subscribe');
+  }
+}
+
+watchTutorialCallBack((message) => {
+  console.log('Success: ' + message);
+}, (error) =>{
+  console.log(error.name + ' ' + error.message);
+});
