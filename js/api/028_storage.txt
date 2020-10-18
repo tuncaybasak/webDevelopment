@@ -1,0 +1,28 @@
+== Web Storage API ==
+
+The Web Storage API is a simple syntax for storing and retrieving data in the browser.
+localStorage.setItem("name", "John Doe");
+localStorage.getItem("name");
+
+=The localStorage Object =
+
+The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+The data is stored with no expiration date, and will not be deleted when the browser is closed.
+The data will be available for days, weeks, and years.
+
+= The sessionStorage Object =
+The sessionStorage object is identical to the localStorage object.
+The difference is that the sessionStorage object stores data for one session.
+The data is deleted when the browser is closed.
+
+sessionStorage.getItem("name");
+sessionStorage.setItem("name", "John Doe");
+
+Storage Object Properties and Methods
+
+key(n)	                Returns the name of the nth key in the storage
+length	                Returns the number of data items stored in the Storage object
+getItem(keyname)	      Returns the value of the specified key name
+setItem(keyname, value)	Adds that key to the storage, or update that key's value if it already exists
+removeItem(keyname)    	Removes that key from the storage
+clear()	                Empty all key out of the storage
