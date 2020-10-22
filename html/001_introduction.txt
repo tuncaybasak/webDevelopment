@@ -41,14 +41,15 @@ lang attribute inside the <html> tag, to declare the language of the Web page
 <cite> Defines the title of a work
 <q> Defines a short inline quotation
 
+= HTML Colors =
+In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
 
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
 
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
 
-
-
-
-
-
-
-
-
+= Standart color names =
+https://www.w3schools.com/colors/colors_names.asp
