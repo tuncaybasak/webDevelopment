@@ -1,6 +1,9 @@
 == HTML ==
 HTML is the standard markup language for Web pages.
 
+= DOCTYPE =
+All HTML documents must start with a document type declaration: <!DOCTYPE html>
+
 = lang =
 lang attribute inside the <html> tag, to declare the language of the Web page
 <!DOCTYPE html>
