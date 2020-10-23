@@ -37,4 +37,12 @@ Use of flexbox ensures that elements behave predictably when the page layout mus
 = CSS Grid Layout =
 The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
 
+= HTML Responsive Web Design =
+Responsive web design is about creating web pages that look good on all devices!
+A responsive web design will automatically adjust for different screen sizes and viewports
 
+To create a responsive website, add the following <meta> tag to all your web pages:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Responsive Images
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
