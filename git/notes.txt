@@ -1,0 +1,9 @@
+-- set git globals
+git config --global user.name 'tuncay basak' 
+git config --global user.password 'password'
+git config --global user.email 'tuncaybasak@gmail.com'
+
+-- get git globals
+git config --get-all user.name > tuncay başak
+git config --get-all user.email > tuncaybasak@gmail.com
+git config --get-all user.password > password
