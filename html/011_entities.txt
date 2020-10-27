@@ -1,0 +1,45 @@
+= HTML Entities =
+Reserved characters in HTML must be replaced with character entities.
+
+= Non-breaking Space =
+A commonly used entity in HTML is the non-breaking space: &nbsp;
+
+= Some Useful HTML Character Entities = 
+<	less than     &lt;
+>	greater than  &gt;
+&	ampersand     &amp;
+"	double quotation mark	&quot;
+'	single quotation mark (apostrophe)	&apos 
+
+= HTML Uniform Resource Locators = 
+A URL is another word for a web address.
+
+scheme://prefix.domain:port/path/filename
+
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+
+= URL Encoding =
+URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.
+URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits
+
+= HTML Versus XHTML =
+XHTML is a stricter, more XML-based version of HTML.
+
+= The Most Important Differences from HTML =
+<!DOCTYPE> is mandatory
+The xmlns attribute in <html> is mandatory
+<html>, <head>, <title>, and <body> are mandatory
+Elements must always be properly nested
+Elements must always be closed
+Elements must always be in lowercase
+Attribute names must always be in lowercase
+Attribute values must always be quoted
+Attribute minimization is forbidden
+
+= Validate HTML With The W3C Validator =
+https://validator.w3.org/
