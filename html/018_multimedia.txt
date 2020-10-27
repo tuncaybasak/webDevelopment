@@ -1,0 +1,38 @@
+= HTML Multimedia =
+Multimedia on the web is sound, music, videos, movies, and animations.
+
+Only MP4, WebM, and Ogg video are supported by the HTML standard.
+Only MP3, WAV, and Ogg audio are supported by the HTML standard.
+
+= <video> =
+To show a video in HTML, use the <video> element:
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+To start a video automatically use the autoplay attribute:
+<video width="320" height="240" autoplay>
+
+= <audio> =
+To play an audio file in HTML, use the <audio> element:
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+= HTML Plug-ins =
+Plug-ins are computer programs that extend the standard functionality of the browser.
+
+= <object> =
+defines an embedded object within an HTML document.
+It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML:
+
+<object width="100%" height="500px" data="snippet.html"></object>
+<object data="audi.jpeg"></object>
+
+= <embed> =
+element also defines an embedded object within an HTML document.
+<embed width="100%" height="500px" src="snippet.html">
