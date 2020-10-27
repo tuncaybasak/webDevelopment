@@ -1,0 +1,52 @@
+Becoming a Full-stack Developer
+
+1 - Frontend - How the Internet Works
+2 - Frontend - HTML, CSS, JS
+3 - Frontend - Version Control Git
+4 - Frontend - Web Security
+5 - Frontend - Package Managers
+6 - Frontend - CSS PreProcessors - SASS, LESS
+7 - Frontend - Build Tools
+8 - Frontend - Frameworks & Libraries
+9 - Frontend - Modern CSS - Styled Components
+10 - Frontend - Web Components
+11 - Frontend - CSS Frameworks - Bootstrap, Tailwinds
+12 - Frontend - Testing Libraries - Jest, Enzyme
+13 - Frontend - Type Checkers - Typescript
+14 - Frontend - Progressive Web Apps
+15 - Frontend - Frontend Tools - DevTools, Lighthouse
+16 - Frontend - Server Side Rendering (SSR)
+17 - Frontend - GraphQL - Apollo, Relay
+18 - Frontend - Static Site Generators - Gatsby NextJS
+19 - Frontend - Mobile Applications - React Native, Flutter
+20 - Frontend - Desktop Applications - Electron
+
+1 - Backend - Operating System - Terminal, IO
+2 - Backend - Language - JavaScript, Rust, Go
+3 - Backend - Version Control - Github
+4 - Backend - Databases - MySql, MongoDB
+5 - Backend - Adv Database - Replication, ORMs
+6 - Backend - REST - JSON APIs, Authentication
+7 - Backend - Caching - CDN, Server Side, Redis
+8 - Backend - Web Security - HTTPS, CORS
+9 - Backend - Testing - Integration, Unit, Functional
+10 - Backend - CI / CD
+11 - Backend - Design and Development Principles
+12 - Backend - Search Engines - Elasticsearch
+13 - Backend - Message Brokers
+14 - Backend - Containers Virtualization - Docker
+15 - Backend - GraphQL - Apollo, Relay
+16 - Backend - Websockets & Web Servers - Apache
+17 - Backend - Building for Scale
+
+DevOps
+1 - DevOps - Languages - Go, Rust, Ruby, Node, Python
+2 - DevOps - OS Concepts - IO, Sockets
+3 - DevOps - Managing Servers - Unix, Linux, Windows
+4 - DevOps - Networking, Security, Protocols
+5 - DevOps - HTTP, FTP, SSL, Proxy, etc
+6 - DevOps - Infrastructure - Web Servers - IIS, Apache
+7 - DevOps - CI/CD - GitHub Actions
+8 - DevOps - Monitoring - Logging, Events
+9 - DevOps - Cloud Providers - Linode, AWS, Azure
+10 - EnhanceUI Design for Developers
