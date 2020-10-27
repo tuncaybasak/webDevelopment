@@ -11,3 +11,62 @@ The <form> element is a container for different types of input elements, such as
 <input type="checkbox"> Displays a checkbox (for selecting zero or more of many choices)
 <input type="submit">   Displays a submit button (for submitting the form)
 <input type="button">   Displays a clickable button
+
+= Text Fields =
+The <input type="text"> defines a single-line input field for text input.
+
+exmp:
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+= The <label> Element =
+The <label> tag defines a label for many form elements.
+
+= Radio Buttons =
+The <input type="radio"> defines a radio button.
+
+exmp:
+<form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+
+= Checkboxes =
+The <input type="checkbox"> defines a checkbox.
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+exmp:
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+= The Submit Button =
+The <input type="submit"> defines a button for submitting the form data to a form-handler.
+The form-handler is typically a file on the server with a script for processing input data.
+The form-handler is specified in the form's action attribute.
+
+exmp:
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
