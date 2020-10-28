@@ -63,3 +63,14 @@ Parameters remain in browser history                            Parameters are n
 URL is limited max 2048                                         No restrictions
 Only ASCII characters allowed                                   No restrictions. Binary data is also allowed
 less secure because data sent is part of the URL                a little safer parameters are not stored in browser history or in web server logs
+
+
+= HTTP Status Messages =
+the server always returns a message for every request. 
+The most common message is 200 OK.
+ 
+1xx: Information
+2xx: Successful
+3xx: Redirection
+4xx: Client Error
+5xx: Server Error
