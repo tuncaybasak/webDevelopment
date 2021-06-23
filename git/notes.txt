@@ -7,3 +7,30 @@ git config --global user.email 'tuncaybasak@gmail.com'
 git config --get-all user.name > tuncay başak
 git config --get-all user.email > tuncaybasak@gmail.com
 git config --get-all user.password > password
+
+git pull
+git push
+git commit -m "bug fix"
+git commit --no-verify -m "bug fix"
+
+// send all changes
+git add .
+
+//change branch
+git checkout -B dev
+
+// remove nodemodule and yarn lock
+rm -rf node_modules/ yarn.lock
+
+yarn install
+yarn build
+yarn upgrade
+yarn start
+yarn fix-all
+yarn lint-all
+yarn symptom-check
+
+//update add remove specigic package
+yarn upgrade "package"
+yarn add "package"
+yarn remove "package"
